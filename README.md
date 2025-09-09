@@ -10,7 +10,7 @@ This is still an in-progress build. Task & budget features are being developed, 
 
 _Current Progress with different pages already anchored:_
 
-![Screenshot](media/firstProgressPic.png)
+![Screenshot](media/progressOne.png)
 
 
 
