@@ -8,6 +8,9 @@ Built with **HTML, CSS, and JavaScript**.
 
 This is still an in-progress build. Task & budget features are being developed, and so are the pixel animations.
 
+Goal: 
+Big animated pixel art of a Working Calculator when clicked next to the budget planner
+
 _Current Progress with different pages already anchored:_
 
 ![Screenshot](media/progressOne.png)
