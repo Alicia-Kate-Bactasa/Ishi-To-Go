@@ -245,10 +245,627 @@ body {
 #secondDescrp{
   font-family: 'Comic Sans MS', cursive, sans-serif;
   color: #ff6d91;  
+}
 
+.signup-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.signup-box {
+  background: #faf8f6;
+  border: 5px dashed #ff8fab;
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 350px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(251, 111, 146, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.signup-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff88a6;
+  font-size: clamp(14px, 3.5vw, 20px);
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 0 #e25c7d;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.signup-form label {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6d91;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.signup-form input {
+  padding: 12px;
+  border: 2px solid #ff8fab;
+  border-radius: 8px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #fb6f92;
+  box-shadow: 0 0 0 3px rgba(251, 111, 146, 0.2);
+}
+
+.signup-btn {
+  font-family: 'Press Start 2P', cursive;
+  background: #ffc2d1;
+  color: #fb6f92;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  animation: pulse 5s infinite;
+}
+
+.signup-btn:hover {
+  background: #ff8fab;
+  color: #ffe5ec;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(119, 11, 38, 0.4);
+}
+
+.signup-btn span {
+  display: inline-block;
+  animation: dance 3s infinite;
+}
+
+.signup-btn span:nth-child(1) { animation-delay: 0s; }
+.signup-btn span:nth-child(2) { animation-delay: 0.1s; }
+.signup-btn span:nth-child(3) { animation-delay: 0.2s; }
+.signup-btn span:nth-child(4) { animation-delay: 0.3s; }
+.signup-btn span:nth-child(5) { animation-delay: 0.4s; }
+.signup-btn span:nth-child(6) { animation-delay: 0.5s; }
+
+.login-link {
+  margin-top: 20px;
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff6e92;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #f94874;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  color: #ff88a6;
+  text-decoration: underline;
 }
 
 /* loginPage css - in progress */
 
+.login-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffe5ec 80%, #f97395 200%);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.login-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.login-box {
+  background: #faf8f6;
+  border: 5px dashed #ff8fab;
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 320px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(251, 111, 146, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.login-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff88a6;
+  font-size: clamp(16px, 4vw, 24px);
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 0 #e25c7d;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.login-form label {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6d91;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  padding: 12px;
+  border: 2px solid #ff8fab;
+  border-radius: 8px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #fb6f92;
+  box-shadow: 0 0 0 3px rgba(251, 111, 146, 0.2);
+}
+
+.login-btn {
+  font-family: 'Press Start 2P', cursive;
+  background: #ffc2d1;
+  color: #fb6f92;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  animation: pulse 5s infinite;
+}
+
+.login-btn:hover {
+  background: #ff8fab;
+  color: #ffe5ec;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(119, 11, 38, 0.4);
+}
+
+.login-btn span {
+  display: inline-block;
+  animation: dance 3s infinite;
+}
+
+.login-btn span:nth-child(1) { animation-delay: 0s; }
+.login-btn span:nth-child(2) { animation-delay: 0.1s; }
+.login-btn span:nth-child(3) { animation-delay: 0.2s; }
+.login-btn span:nth-child(4) { animation-delay: 0.3s; }
+.login-btn span:nth-child(5) { animation-delay: 0.4s; }
+
+.signup-link {
+  margin-top: 20px;
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff6e92;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #f94874;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  color: #ff88a6;
+  text-decoration: underline;
+}
+
 
 /* guide css - in progress */
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 140px 5vw 160px;
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-content {
+  flex: 1;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff88a6;
+  font-size: clamp(24px, 5vw, 36px);
+  text-shadow: 2px 2px 0 #e25c7d;
+  margin-bottom: 1rem;
+}
+
+.dashboard-subtitle {
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff6d91;
+  font-size: clamp(16px, 3vw, 18px);
+  margin-bottom: 2rem;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.dashboard-btn {
+  font-family: 'Press Start 2P', cursive;
+  background: #ffc2d1;
+  color: #fb6f92;
+  font-size: clamp(14px, 3vw, 18px);
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 8px rgba(119, 11, 38, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.dashboard-btn:hover {
+  background: #ff8fab;
+  color: #ffe5ec;
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(119, 11, 38, 0.6);
+}
+
+.btn-icon {
+  font-size: 1.5em;
+}
+
+.dashboard-btn span {
+  display: inline-block;
+  animation: dance 4s infinite;
+}
+
+.dashboard-btn span:nth-child(odd) { animation-delay: 0.2s; }
+.dashboard-btn span:nth-child(even) { animation-delay: 0.4s; }
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ff8fab;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6d91;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff88a6;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ishi-companion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ishi-gif {
+  width: 150px;
+  height: auto;
+  image-rendering: pixelated;
+  border-radius: 12px;
+  background: #ff8fab;
+  padding: 1rem;
+}
+
+.ishi-message {
+  background: #ffc2d1;
+  color: #fb6f92;
+  padding: 0.8rem 1.2rem;
+  border-radius: 20px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  border: 2px solid #ff8fab;
+  position: relative;
+}
+
+.ishi-message::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ff8fab;
+}
+
+/* Task Planner & Budget Planner CSS */
+.planner-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.planner-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff88a6;
+  font-size: clamp(20px, 4vw, 28px);
+  text-shadow: 2px 2px 0 #e25c7d;
+  margin-bottom: 1rem;
+}
+
+.planner-subtitle {
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff6d91;
+  font-size: clamp(14px, 3vw, 16px);
+  margin-bottom: 2rem;
+}
+
+.task-input-section, .budget-input-section {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ff8fab;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-group, .input-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task-input, .budget-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 2px solid #ff8fab;
+  border-radius: 8px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+}
+
+.add-task-btn, .add-budget-btn {
+  font-family: 'Press Start 2P', cursive;
+  background: #ffc2d1;
+  color: #fb6f92;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-task-btn:hover, .add-budget-btn:hover {
+  background: #ff8fab;
+  color: #ffe5ec;
+}
+
+.input-tabs {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.tab-btn {
+  font-family: 'Press Start 2P', cursive;
+  background: #f0f0f0;
+  color: #ff6d91;
+  font-size: 12px;
+  padding: 8px 16px;
+  border: 2px solid #ff8fab;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: #ffc2d1;
+  color: #fb6f92;
+}
+
+.tasks-container, .budget-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.category-section, .budget-section {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ff8fab;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.section-title, .category-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6d91;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.task-list, .budget-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item, .budget-item {
+  background: #faf8f6;
+  border: 2px solid #ff8fab;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item.completed {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.complete-btn, .delete-btn {
+  background: none;
+  border: 1px solid #ff8fab;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.complete-btn {
+  color: #4CAF50;
+}
+
+.delete-btn {
+  color: #f44336;
+}
+
+.budget-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ff8fab;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6d91;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.amount {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff88a6;
+}
+
+.budget-item-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empty-state {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .dashboard-buttons {
+    max-width: none;
+  }
+  
+  .tasks-container, .budget-lists {
+    grid-template-columns: 1fr;
+  }
+  
+  .input-group, .input-row {
+    flex-direction: column;
+  }
+  
+  .task-input, .budget-input {
+    min-width: auto;
+    width: 100%;
+  }
+}
