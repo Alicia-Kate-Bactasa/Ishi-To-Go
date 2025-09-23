@@ -1,1 +1,1 @@
-![My Photo](media/firstProgress.png)
+![My Photo](media/firstProgressPic.png)
