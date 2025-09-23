@@ -1,0 +1,1 @@
+![My Photo](media/firstProgress.png)
